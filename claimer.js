@@ -31,7 +31,7 @@ function cacheRewards() {
     }, errs => {
         console.error(errs);
         //retry
-        cacheRewards();
+        //cacheRewards();
     }).then(rewards => {
         console.log("current rewards:", rewards);
         if (rewards > 0) {
@@ -55,7 +55,7 @@ function cacheRewards() {
             }, err => {
                 console.error(err);
                 //retry
-                cacheRewards();
+                //cacheRewards();
             });
         }
     });
